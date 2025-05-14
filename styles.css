@@ -1,0 +1,219 @@
+/* Variables */
+/* Reset y Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f7;
+  color: #2d3436;
+  padding-top: 60px;
+}
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  padding: 10px 0;
+  z-index: 1000;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #3498db;
+  border-radius: 10px;
+}
+/* Contenedor Principal */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Títulos */
+h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+/* Secciones Comunes */
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+section img,
+section video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+section p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #2d3436;
+  margin-top: 20px;
+}
+/* Estilo para las Imágenes en Cajas (Responsive) */
+.section-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.section-images .image-box {
+  width: 30%;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.section-images .image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 3px solid #3498db;
+}
+/* Diseño para las Páginas Específicas */
+/* Página de Inicio */
+.inicio section {
+  background-color: #ecf0f1;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.inicio section img {
+  width: 60%;
+  margin: 20px auto;
+  display: block;
+}
+/* Página de Aplicaciones */
+.aplicaciones {
+  background-color: #2ecc71;
+  color: white;
+}
+.aplicaciones h2 {
+  color: white;
+}
+.aplicaciones .section-images {
+  gap: 30px;
+  justify-content: space-between;
+}
+.aplicaciones .section-images .image-box {
+  width: 48%;
+}
+/* Página de Proyectos */
+.proyectos {
+  background-color: #9b59b6;
+  color: white;
+}
+.proyectos h2 {
+  color: white;
+}
+.proyectos .section-images {
+  gap: 30px;
+}
+.proyectos .image-box {
+  width: 48%;
+  padding: 20px;
+  background-color: #2c3e50;
+  border-radius: 10px;
+}
+/* Página de Investigación */
+.investigacion {
+  background-color: #e74c3c;
+  color: white;
+}
+.investigacion h2 {
+  color: white;
+}
+.investigacion .section-images {
+  gap: 30px;
+  justify-content: space-between;
+}
+.investigacion .section-images .image-box {
+  width: 48%;
+  padding: 20px;
+  background-color: #2c3e50;
+  border-radius: 10px;
+}
+/* Página de Contacto (Formulario Mejorado) */
+.contacto {
+  background-color: #9b59b6;
+  color: white;
+}
+.contacto section {
+  background-color: #2c3e50;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.contacto h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+.contacto section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacto section form label {
+  font-size: 16px;
+  color: white;
+}
+.contacto section form input,
+.contacto section form textarea {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #3498db;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+.contacto section form button {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contacto section form button:hover {
+  background-color: #2980b9;
+}
